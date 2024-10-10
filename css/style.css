@@ -1,0 +1,72 @@
+footer {
+    background-color: #E8E8E8; /* Cor de fundo */
+    color: black; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Espaçamento interno */
+    position: fixed; /* Fixa o rodapé na parte inferior da página */
+    left: 0;
+    bottom: 0;
+    width: 100%; /* Faz com que o rodapé cubra toda a largura da tela */
+}
+.logo-street {
+    max-width: 100%; /* Faz a imagem se ajustar à largura da div */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+}
+.lista-imagem-rodape {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão */
+    display: flex; /* Usa flexbox para alinhar as imagens horizontalmente */
+    justify-content: center; /* Centraliza as imagens na linha */
+}
+
+.lista-imagem-rodape li {
+    margin: 10px; /* Espaçamento entre as imagens */
+}
+
+
+.product-cards {
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+    width: 190px; /* Largura ajustada */
+    height: 240px; /* Altura ajustada */
+}
+.rating {
+    color: #6100FF; /* Cor roxa */
+    font-weight: bold; /* Opcional: deixar o número em negrito */
+}
+
+.product-card img {
+    max-width: 100%;
+    height: 120px; /* Definir altura fixa para imagem */
+    border-radius: 8px 8px 0 0;
+}
+.product-card h2 {
+    font-size: 16px;
+    margin: 0.5em 0;
+}
+
+.product-card p {
+    margin: 5px 0;
+}
+
+.texto-justdoit {
+    color: #5C5C5C;
+    position: absolute;
+    top: -15px; /* ajuste conforme necessário */
+    left: 165px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
