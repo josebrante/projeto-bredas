@@ -3,7 +3,7 @@ footer {
     color: black; /* Cor do texto */
     text-align: center; /* Centraliza o texto */
     padding: 20px; /* Espaçamento interno */
-    position: fixed; /* Fixa o rodapé na parte inferior da página */
+    position:relative; /* Fixa o rodapé na parte inferior da página */
     left: 0;
     bottom: 0;
     width: 100%; /* Faz com que o rodapé cubra toda a largura da tela */
@@ -39,8 +39,8 @@ footer {
     margin: 1em;
     padding: 1em;
     text-align: center;
-    width: 190px; /* Largura ajustada */
-    height: 240px; /* Altura ajustada */
+    width: 150px; /* Largura ajustada */
+    height: 210px; /* Altura ajustada */
 }
 .rating {
     color: #6100FF; /* Cor roxa */
@@ -69,4 +69,27 @@ footer {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
+}
+.search-container {
+    position: relative; /* Container posicionado relativamente */
+    height: 100vh;
+}
+
+.search-box {
+    width: 300px;
+    height: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Borda arredondada */
+    padding: 10px;
+    font-size: 16px;
+
+    position: absolute; /* Permite mover o campo livremente */
+    top: 2%; /* Ajuste essa porcentagem para subir ou descer o campo */
+    left: 70%; /* Ajuste essa porcentagem para mover horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza o campo no ponto definido */
+}
+
+.search-box:focus {
+    border-color: #333643;
+    outline: none;
 }
