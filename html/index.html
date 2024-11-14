@@ -3,60 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>inicio</title>
+    <title>Início</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="search-container">
-            <input type="text" class="search-box" placeholder="Digite sua pesquisa...">
-        </div>
-        <div>
-
-        </div>       
-    </header>
-    <main>
-        <section class="product-cards">
-            <h1 class="texto-justdoit">just do it</h1>
-            <div class="product-card">
-                <img src="../img/tenis/tenisAirMaxExcee.png" alt="tenis Air Max Excee">
-                <h2>Nike Air Max Excee</h2>
-                <p>Preço: $607.99</p>
-                <p>Avaliação: <span class="rating">5.0</span></p>
+    <div class="page-container">
+        <header>
+            <div class="search-container">
+                <span class="icon lupa">🔍</span>
+                <input type="text" placeholder="Pesquise..." class="search-input">
+                <span class="icon filtro">⚙️</span>
             </div>
-            <div class="product-card">
-                <img src="../img/tenis/Nike Air Dunk Low Jumbo.png" alt="Nike Air Dunk Low Jumbo">
-                <h2>Nike Air Dunk Low Jumbo</h2>
-                <p>Preço: $1044.99</p>
-                <p>Avaliação: <span class="rating">4.5</span></p>
-            </div>           
-            <div class="product-card">
-                <img src="../img/tenis/Nike Air Dunk Low Jumbo.png" alt="Nike Air Dunk Low Jumbo">
-                <h2>Nike Air VaporMax Flyknit</h2>
-                <p>Preço: $1709.99</p>
-                <p>Avaliação: <span class="rating">4.8</span></p>
-            </div>   
-            <div class="product-card">
-                <img src="../img/tenis/Nike Air VaporMax Flyknit.png" alt="Nike Air VaporMax Flyknit">
-                <h2>Nike Air Max Dn</h2>
-                <p>Preço: $1234.99</p>
-                <p>Avaliação: <span class="rating">4.0</span></p>
-            </div>       
-        </section>
-    </main>
-    <footer>
-        <div class="txt-rodape">
-            <img src="../img/logos/logo do site.png" class="logo_street" alt="logo street">
-            <p>Na Streets, respiramos a cultura das ruas e transformamos essa energia em moda que<br>fala a sua língua. Nossa loja é mais do queum simples e-commerce, é um ponto de<br>encontro para os amantes do streetwear que buscam expressar sua identidade através<br>de peças que combinam conforto, qualidade e as últimas tendências do asfalto.</p>
-            <ul class="lista-imagem-rodape">
-                <li><img src="../img/logos/whatsap.png" alt="logo whatsapp"></li>
-                <li><img src="../img/logos/instagram.png" alt="logo instagram"></li>
-                <li><img src="../img/logos/facebook.png" alt="logo facebook"></li>
-            </ul>
-        </div>
-    </footer>
+        </header>
+        <div class="sidebar">
+            <div class="logo">
+                <img src="../img/logos/logo do site.png" alt="Logo Streets">
+                <h2>Streets</h2>
+            </div>
+            <nav class="menu">
+                <a href="#" class="menu-item">
+                    <i class="icon-home">
+                        <img src="../img/logos/casinha.svg" alt="Home">
+                    </i>Menu
+                </a>
+                <a href="#" class="menu-item">
+                    <i class="icon-explore">
+                        <img src="../img/logos/explorar.svg" alt="Explorar">
+                    </i>Explorar
+                </a>
+                <a href="#" class="menu-item">
+                    <i class="icon-favorites">
+                        <img src="../img/logos/coração.svg" alt="Favoritos">
+                    </i>Favoritos
+                </a>
+                <a href="#" class="menu-item">
+                    <i class="icon-cart">
+                        <img src="../img/logos/carrinho.svg" alt="Carrinho">
+                    </i>Carrinho
+                </a>
+                <a href="#" class="menu-item">
+                    <i class="icon-profile">
+                        <img src="../img/logos/usuario.svg" alt="Perfil">
+                    </i>Perfil
+                </a>
+                <a href="#" class="menu-item">
+                    <i class="icon-settings">
+                        <img src="../img/logos/configuração.svg" alt="Configurações">
+                    </i>Configurações
+                </a>
+            </nav>
+            <div class="chat-support">
+                <div class="chat-box">
+                    <p>Precisa de ajuda?<br>Entre em contato com nosso ChatBot para resolução dos seus problemas!</p>
+                    <button>ChatBot</button>
+                </div>
+            </div>
+            <a href="#" class="logout">
+                <i class="icon-logout">
+                    <img src="../img/logos/sair.svg" alt="Sair">
+                </i>Sair
+            </a>
+        </div>       
+        <main>
+            <!-- Conteúdo principal -->
+        </main>
+        <footer>
+            <div class="txt-rodape">
+                <img src="../img/logos/logo do site.png" class="logo-street" alt="logo street">
+                <p>Na Streets, respiramos a cultura das ruas e transformamos essa energia em moda que<br>fala a sua língua. Nossa loja é mais do que um simples e-commerce, é um ponto de<br>encontro para os amantes do streetwear que buscam expressar sua identidade através<br>de peças que combinam conforto, qualidade e as últimas tendências do asfalto.</p>
+                <ul class="lista-imagem-rodape">
+                    <li><img src="../img/logos/whatsap.png" alt="logo whatsapp"></li>
+                    <li><img src="../img/logos/instagram.png" alt="logo instagram"></li>
+                    <li><img src="../img/logos/facebook.png" alt="logo facebook"></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

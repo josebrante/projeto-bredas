@@ -1,18 +1,215 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Contêiner principal */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* Conteúdo principal */
+main {
+    flex: 1;
+    margin-left: 250px; /* Espaço para a sidebar */
+}
+
+/* Barra lateral */
+.sidebar {
+    position: fixed; /* Fixa a posição no topo da página */
+    top: 0; /* Alinha a div no topo */
+    left: 0; /* Alinha a div à esquerda */
+    width: 250px;
+    background-color: #F5F5F5;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh; /* Faz a div cobrir toda a altura da janela */
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Adiciona uma sombra para destacar a barra lateral */
+    z-index: 1000; /* Garante que a sidebar fique sobre outros elementos */
+}
+
+.sidebar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.sidebar .logo img {
+    width: 70px;
+    height: 60px;
+}
+
+.sidebar .logo h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.menu .menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 1rem;
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.menu .menu-item i { 
+    width: 24px; 
+    height: 24px; 
+    background-color: transparent; /* Torna o fundo transparente */ 
+    margin-right: 10px; 
+    border-radius: 0; /* Remove qualquer borda arredondada */ 
+    display: flex; /* Flexbox para centralizar o ícone */ 
+    align-items: center; /* Centraliza verticalmente o ícone */ 
+    justify-content: center; /* Centraliza horizontalmente o ícone */
+}
+
+.menu .menu-item i img { 
+    width: 24px; /* Define a largura do ícone */ 
+    height: 24px; /* Define a altura do ícone */ 
+}
+
+.menu .menu-item:hover {
+    color: #000;
+}
+
+/* Suporte via chat */
+.chat-support {
+    background-color: #6A0DAD;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.chat-support .chat-box p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.chat-support button {
+    background-color: #fff;
+    color: #6A0DAD;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.chat-support button:hover {
+    background-color: #eee;
+}
+
+/* Logout */
+.logout {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #333;
+    text-decoration: none;
+    padding-top: 20px;
+}
+
+.logout i {
+    width: 24px;
+    height: 24px;
+    background-color: #ddd; /* Substitua com um ícone real */
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.logout:hover {
+    color: #000;
+}
+
+/* Barra de pesquisa */
+.search-container {
+    display: flex; /* Alinha os itens horizontalmente */
+    align-items: center; /* Centraliza verticalmente os itens */
+    justify-content: center; /* Centraliza horizontalmente os itens */
+    background-color: #f9f9f9; /* Define a cor de fundo do botão de pesquisa */
+    border: 1px solid #ddd; /* Adiciona uma borda ao redor do botão */
+    border-radius: 25px; /* Arredonda os cantos do botão */
+    padding: 5px 10px; /* Espaçamento interno (padding) do botão */
+    width: 300px; /* Largura do botão de pesquisa */
+    margin: 20px auto; /* Espaço no topo e centraliza horizontalmente o botão */
+    position: fixed; /* Fixa a barra de pesquisa na tela */
+    top: 10px; /* Distância do topo */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta a centralização */
+    z-index: 1001; /* Garante que a barra de pesquisa fique sobre outros elementos */
+}
+
+/* Estilo dos ícones dentro do botão de pesquisa */
+.search-container .icon {
+    font-size: 18px; /* Tamanho da fonte dos ícones */
+    color: #888; /* Cor dos ícones */
+}
+
+/* Espaçamento entre o ícone de lupa e o campo de texto */
+.search-container .lupa {
+    margin-right: 8px; /* Espaço à direita do ícone de lupa */
+}
+
+/* Posiciona o ícone de filtro à direita */
+.search-container .filtro {
+    margin-left: auto; /* Empurra o ícone de filtro para o lado direito */
+    cursor: pointer; /* Altera o cursor para pointer ao passar sobre o ícone */
+}
+
+/* Campo de texto do botão de pesquisa */
+.search-input {
+    border: none; /* Remove a borda do campo de texto */
+    outline: none; /* Remove o contorno ao focar no campo */
+    flex: 1; /* Faz o campo de texto ocupar o espaço restante no container */
+    background: transparent; /* Torna o fundo do campo transparente */
+    padding: 5px; /* Espaçamento interno (padding) do campo de texto */
+    font-size: 16px; /* Tamanho da fonte do campo de texto */
+    color: #333; /* Cor do texto no campo de pesquisa */
+}
+
+/* Estilo do placeholder (texto temporário) do campo de pesquisa */
+.search-input::placeholder {
+    color: #888; /* Cor do texto do placeholder */
+}
+
+/* Rodapé */
 footer {
     background-color: #E8E8E8; /* Cor de fundo */
     color: black; /* Cor do texto */
     text-align: center; /* Centraliza o texto */
     padding: 20px; /* Espaçamento interno */
-    position:relative; /* Fixa o rodapé na parte inferior da página */
-    left: 0;
-    bottom: 0;
     width: 100%; /* Faz com que o rodapé cubra toda a largura da tela */
+    position: relative;
+    clear: both; /* Garante que o rodapé não fique ao lado de elementos flutuantes */
+    margin-top: auto; /* Empurra o rodapé para o final da página */
 }
+
 .logo-street {
     max-width: 100%; /* Faz a imagem se ajustar à largura da div */
     height: auto; /* Mantém a proporção da imagem */
     margin-bottom: 10px; /* Espaçamento abaixo da imagem */
 }
+
 .lista-imagem-rodape {
     list-style-type: none; /* Remove os marcadores da lista */
     padding: 0; /* Remove o padding padrão */
@@ -22,74 +219,4 @@ footer {
 
 .lista-imagem-rodape li {
     margin: 10px; /* Espaçamento entre as imagens */
-}
-
-
-.product-cards {
-    display: flex;
-    justify-content: center;
-    margin: 2em;
-}
-
-.product-card {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 1em;
-    padding: 1em;
-    text-align: center;
-    width: 150px; /* Largura ajustada */
-    height: 210px; /* Altura ajustada */
-}
-.rating {
-    color: #6100FF; /* Cor roxa */
-    font-weight: bold; /* Opcional: deixar o número em negrito */
-}
-
-.product-card img {
-    max-width: 100%;
-    height: 120px; /* Definir altura fixa para imagem */
-    border-radius: 8px 8px 0 0;
-}
-.product-card h2 {
-    font-size: 16px;
-    margin: 0.5em 0;
-}
-
-.product-card p {
-    margin: 5px 0;
-}
-
-.texto-justdoit {
-    color: #5C5C5C;
-    position: absolute;
-    top: -15px; /* ajuste conforme necessário */
-    left: 165px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-.search-container {
-    position: relative; /* Container posicionado relativamente */
-    height: 100vh;
-}
-
-.search-box {
-    width: 300px;
-    height: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px; /* Borda arredondada */
-    padding: 10px;
-    font-size: 16px;
-
-    position: absolute; /* Permite mover o campo livremente */
-    top: 2%; /* Ajuste essa porcentagem para subir ou descer o campo */
-    left: 70%; /* Ajuste essa porcentagem para mover horizontalmente */
-    transform: translate(-50%, -50%); /* Centraliza o campo no ponto definido */
-}
-
-.search-box:focus {
-    border-color: #333643;
-    outline: none;
 }
